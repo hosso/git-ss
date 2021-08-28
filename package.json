@@ -1,0 +1,79 @@
+{
+  "name": "git-ss",
+  "version": "0.0.0",
+  "description": "Save a snapshot of a directory to git",
+  "keywords": [
+    "git",
+    "github",
+    "backup",
+    "snapshot"
+  ],
+  "repository": "hosso/git-ss",
+  "license": "MIT",
+  "author": "E. Hosso",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn clean && yarn build",
+    "test": "jest --coverage",
+    "test:debug": "node --inspect node_modules/.bin/jest --",
+    "lint": "run-p lint:*",
+    "lint:tsc": "tsc --noEmit",
+    "lint:eslint": "eslint --ext .ts,.js --max-warnings 0 .",
+    "lint:prettier": "prettier . --check",
+    "fix": "run-s fix:*",
+    "fix:eslint": "yarn lint:eslint --fix",
+    "fix:prettier": "yarn lint:prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix --max-warnings 0"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ],
+    "package.json": [
+      "sort-package-json"
+    ]
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "globby": "11",
+    "simple-git": "^2.45.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.9",
+    "@types/faker": "^5.5.8",
+    "@types/fs-extra": "^9.0.12",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.4",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "execa": "^5.1.1",
+    "faker": "^5.5.3",
+    "husky": "3",
+    "jest": "^27.1.0",
+    "lint-staged": "^11.1.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "sort-package-json": "^1.50.0",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.4.2"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
