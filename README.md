@@ -18,7 +18,7 @@ yarn add git-ss
 const { pushToGit } = require('git-ss');
 
 async function takeSnapshot() {
-  await pushToGit('./mydata', 'https://github.com/hosso/mybackup');
+  await pushToGit('./mydata', 'https://github.com/hosso/mybackup.git');
 }
 
 takeSnapshot();
@@ -30,7 +30,7 @@ takeSnapshot();
 import { pushToGit } from 'git-ss';
 
 async function takeSnapshot() {
-  await pushToGit('./mydata', 'https://github.com/hosso/mybackup');
+  await pushToGit('./mydata', 'https://github.com/hosso/mybackup.git');
 }
 
 takeSnapshot();
