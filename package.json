@@ -18,8 +18,8 @@
   ],
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "tsc -p tsconfig.build.json",
-    "prepublishOnly": "yarn clean && yarn build",
+    "build": "yarn clean && tsc -p tsconfig.build.json",
+    "prepublishOnly": "yarn build",
     "test": "jest --coverage",
     "test:debug": "node --inspect node_modules/.bin/jest --",
     "lint": "run-p lint:*",
