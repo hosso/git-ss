@@ -33,6 +33,16 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
+  test('pushToGit(src, repo, { maxFileSize }', async () => {
+    const files = await generateTestFiles();
+    await pushToGit(files, repo, {
+      maxFileSize: 99,
+    });
+
+    const logs = await getCommitLogs();
+    expect(logs).toMatchSnapshot();
+  });
+
   test('Repeat pushToGit(src, repo)', async () => {
     for (let i = 0; i < 3; i++) {
       const files = await generateTestFiles(i);

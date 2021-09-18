@@ -757,6 +757,181 @@ index 0000000..3be870f
 +Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
 `;
 
+exports[`Push To Git pushToGit(src, repo, { maxFileSize } 1`] = `
+"commit ****************************************
+Author: somebody <somebody@example.com>
+Date:   *** *** ** **:**:** **** +****
+
+    ****-**-**T**:**:**.***Z
+
+diff --git a/Library/berkshire.es3.tra.partaa b/Library/berkshire.es3.tra.partaa
+new file mode 100644
+index 0000000..0596440
+--- /dev/null
++++ b/Library/berkshire.es3.tra.partaa
+@@ -0,0 +1 @@
++Facere quia deleniti dolorem quibusdam id veniam. Et nisi aut corporis laboriosam esse est. Accusam
+\\\\ No newline at end of file
+diff --git a/Library/berkshire.es3.tra.partab b/Library/berkshire.es3.tra.partab
+new file mode 100644
+index 0000000..c49d47c
+--- /dev/null
++++ b/Library/berkshire.es3.tra.partab
+@@ -0,0 +1 @@
++us officiis ut excepturi blanditiis libero ut qui. Fuga enim tempore non voluptas quia vitae ipsam 
+\\\\ No newline at end of file
+diff --git a/Library/berkshire.es3.tra.partac b/Library/berkshire.es3.tra.partac
+new file mode 100644
+index 0000000..7dd06be
+--- /dev/null
++++ b/Library/berkshire.es3.tra.partac
+@@ -0,0 +1 @@
++voluptas.
+diff --git a/Network/bypassing_synergies_rss.spf.clkt.partaa b/Network/bypassing_synergies_rss.spf.clkt.partaa
+new file mode 100644
+index 0000000..feab6bb
+--- /dev/null
++++ b/Network/bypassing_synergies_rss.spf.clkt.partaa
+@@ -0,0 +1 @@
++Exercitationem illum molestiae. Similique illo blanditiis et. Rem quod molestias ab esse impedit al
+\\\\ No newline at end of file
+diff --git a/Network/bypassing_synergies_rss.spf.clkt.partab b/Network/bypassing_synergies_rss.spf.clkt.partab
+new file mode 100644
+index 0000000..455f177
+--- /dev/null
++++ b/Network/bypassing_synergies_rss.spf.clkt.partab
+@@ -0,0 +1 @@
++iquam quo vel.
+diff --git a/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partaa b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partaa
+new file mode 100644
+index 0000000..4cd341d
+--- /dev/null
++++ b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partaa
+@@ -0,0 +1 @@
++Quas optio ea odio sit odio quae voluptas id error. Dicta aut qui qui vel. Suscipit ipsum molestiae
+\\\\ No newline at end of file
+diff --git a/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partab b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partab
+new file mode 100644
+index 0000000..4e47c9a
+--- /dev/null
++++ b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r.partab
+@@ -0,0 +1 @@
++ inventore placeat nesciunt. Laboriosam facere odio beatae nobis vero quia.
+diff --git a/media/compress_user_centric.inkml.rpm.partaa b/media/compress_user_centric.inkml.rpm.partaa
+new file mode 100644
+index 0000000..1aa57f7
+--- /dev/null
++++ b/media/compress_user_centric.inkml.rpm.partaa
+@@ -0,0 +1 @@
++Labore magni rerum. Praesentium distinctio adipisci nulla exercitationem. Illum at natus eum cum ip
+\\\\ No newline at end of file
+diff --git a/media/compress_user_centric.inkml.rpm.partab b/media/compress_user_centric.inkml.rpm.partab
+new file mode 100644
+index 0000000..1c1c277
+--- /dev/null
++++ b/media/compress_user_centric.inkml.rpm.partab
+@@ -0,0 +1 @@
++sam consequatur. Accusamus ipsum quam eum inventore. Deleniti omnis occaecati culpa culpa.
+diff --git a/proc/customer_facilitate_ib.plc.wks.partaa b/proc/customer_facilitate_ib.plc.wks.partaa
+new file mode 100644
+index 0000000..8e0ed87
+--- /dev/null
++++ b/proc/customer_facilitate_ib.plc.wks.partaa
+@@ -0,0 +1 @@
++Corporis vel in unde. Iste asperiores consequatur ex quidem omnis inventore deserunt. Eligendi offi
+\\\\ No newline at end of file
+diff --git a/proc/customer_facilitate_ib.plc.wks.partab b/proc/customer_facilitate_ib.plc.wks.partab
+new file mode 100644
+index 0000000..36aa21d
+--- /dev/null
++++ b/proc/customer_facilitate_ib.plc.wks.partab
+@@ -0,0 +1 @@
++ciis voluptatem.
+diff --git a/rescue/automotive.nc.wml.partaa b/rescue/automotive.nc.wml.partaa
+new file mode 100644
+index 0000000..8610185
+--- /dev/null
++++ b/rescue/automotive.nc.wml.partaa
+@@ -0,0 +1 @@
++Ut nostrum ducimus occaecati. Ut exercitationem voluptatibus error quaerat. Error sint aut aliquid 
+\\\\ No newline at end of file
+diff --git a/rescue/automotive.nc.wml.partab b/rescue/automotive.nc.wml.partab
+new file mode 100644
+index 0000000..3d34ca9
+--- /dev/null
++++ b/rescue/automotive.nc.wml.partab
+@@ -0,0 +1 @@
++qui harum minus officiis. Dolorem animi maiores et.
+diff --git a/sys/system_withdrawal.msf.ez2.partaa b/sys/system_withdrawal.msf.ez2.partaa
+new file mode 100644
+index 0000000..1462eaa
+--- /dev/null
++++ b/sys/system_withdrawal.msf.ez2.partaa
+@@ -0,0 +1 @@
++Harum voluptas sunt omnis et accusantium et quia quos sequi. Beatae enim necessitatibus molestiae p
+\\\\ No newline at end of file
+diff --git a/sys/system_withdrawal.msf.ez2.partab b/sys/system_withdrawal.msf.ez2.partab
+new file mode 100644
+index 0000000..d1000e1
+--- /dev/null
++++ b/sys/system_withdrawal.msf.ez2.partab
+@@ -0,0 +1 @@
++laceat saepe. Rerum excepturi et laudantium fuga similique fugit corporis. Dolores esse nobis et si
+\\\\ No newline at end of file
+diff --git a/sys/system_withdrawal.msf.ez2.partac b/sys/system_withdrawal.msf.ez2.partac
+new file mode 100644
+index 0000000..1bea756
+--- /dev/null
++++ b/sys/system_withdrawal.msf.ez2.partac
+@@ -0,0 +1 @@
++nt.
+diff --git a/usr/X11R6/global_rupee_sensor.gif.viv.partaa b/usr/X11R6/global_rupee_sensor.gif.viv.partaa
+new file mode 100644
+index 0000000..218e8a3
+--- /dev/null
++++ b/usr/X11R6/global_rupee_sensor.gif.viv.partaa
+@@ -0,0 +1 @@
++Culpa deleniti eos reprehenderit in nisi et qui. Odio et inventore eligendi in. Id harum sit odio q
+\\\\ No newline at end of file
+diff --git a/usr/X11R6/global_rupee_sensor.gif.viv.partab b/usr/X11R6/global_rupee_sensor.gif.viv.partab
+new file mode 100644
+index 0000000..414f845
+--- /dev/null
++++ b/usr/X11R6/global_rupee_sensor.gif.viv.partab
+@@ -0,0 +1 @@
++uia vitae provident. Provident molestiae harum ullam pariatur quos est quod.
+diff --git a/usr/obj/chief_ergonomic.srx.z1.partaa b/usr/obj/chief_ergonomic.srx.z1.partaa
+new file mode 100644
+index 0000000..fe247ad
+--- /dev/null
++++ b/usr/obj/chief_ergonomic.srx.z1.partaa
+@@ -0,0 +1 @@
++Nihil accusamus natus. Quia dolores sed dolores vel quis. Et consequatur voluptas consequatur exped
+\\\\ No newline at end of file
+diff --git a/usr/obj/chief_ergonomic.srx.z1.partab b/usr/obj/chief_ergonomic.srx.z1.partab
+new file mode 100644
+index 0000000..ef1944e
+--- /dev/null
++++ b/usr/obj/chief_ergonomic.srx.z1.partab
+@@ -0,0 +1 @@
++ita omnis. Recusandae error culpa nihil quia quis.
+diff --git a/usr/src/mouse.cbr.uvvt.partaa b/usr/src/mouse.cbr.uvvt.partaa
+new file mode 100644
+index 0000000..b3e7930
+--- /dev/null
++++ b/usr/src/mouse.cbr.uvvt.partaa
+@@ -0,0 +1 @@
++Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas o
+\\\\ No newline at end of file
+diff --git a/usr/src/mouse.cbr.uvvt.partab b/usr/src/mouse.cbr.uvvt.partab
+new file mode 100644
+index 0000000..76c4893
+--- /dev/null
++++ b/usr/src/mouse.cbr.uvvt.partab
+@@ -0,0 +1 @@
++ptio aut voluptatem."
+`;
+
 exports[`Push To Git pushToGit(src, repo, { name, email } 1`] = `
 "commit ****************************************
 Author: test <test@example.com>
