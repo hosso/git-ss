@@ -3,7 +3,7 @@
 exports[`Push To Git Repeat pushToGit(src, repo) 1`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -82,7 +82,7 @@ index 0000000..04b106e
 exports[`Push To Git Repeat pushToGit(src, repo) 2`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -229,7 +229,7 @@ index 04b106e..0000000
 
 commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -308,7 +308,7 @@ index 0000000..04b106e
 exports[`Push To Git Repeat pushToGit(src, repo) 3`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -455,7 +455,7 @@ index 0000000..ffcc639
 
 commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -602,7 +602,7 @@ index 04b106e..0000000
 
 commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -681,7 +681,7 @@ index 0000000..04b106e
 exports[`Push To Git pushToGit(src, repo) 1`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 
@@ -760,7 +760,7 @@ index 0000000..3be870f
 exports[`Push To Git pushToGit(src, repo, { name, email } 1`] = `
 "commit ****************************************
 Author: test <test@example.com>
-Date:   *****************************
+Date:   *** *** ** **:**:** **** +****
 
     ****-**-**T**:**:**.***Z
 

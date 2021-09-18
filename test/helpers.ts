@@ -27,16 +27,21 @@ export async function getCommitLogs(): Promise<string> {
   });
 
   // Conceal changing text, then return it
-  return stdout
-    .replace(
-      /((?:commit|Date:)\s*)([^\n]+)/g,
-      (_match: string, p1: string, p2: string) =>
-        `${p1}${'*'.repeat(p2.length)}`,
-    )
-    .replace(
-      /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z/g,
-      '****-**-**T**:**:**.***Z',
-    );
+  return (
+    stdout
+      // Commit hash strings like "d67741b3f24fdda7303fe3ce05bb784be030eb0e"
+      .replace(/[0-f]{40}/g, '*'.repeat(40))
+      // Date strings like "Thu Dec 31 23:59:59 2020 +0900"
+      .replace(
+        /[A-Za-z]{3} [A-Za-z]{3} \d{1,2} \d{2}:\d{2}:\d{2} \d{4} \+\d{4}/g,
+        '*** *** ** **:**:** **** +****',
+      )
+      // Subject strings like "2020-12-31T23:59:59.999Z"
+      .replace(
+        /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}.\d{3}Z/g,
+        '****-**-**T**:**:**.***Z',
+      )
+  );
 }
 
 export async function generateTestFiles(seed = 123): Promise<string> {
