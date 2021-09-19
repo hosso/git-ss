@@ -2,6 +2,7 @@ import { pushToGit } from '../src';
 import {
   changeToWorkingDir,
   createLocalRepo,
+  generateTestArchive,
   generateTestFiles,
   getCommitLogs,
 } from './helpers';
@@ -33,11 +34,25 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
+  test('pushToGit(src, repo, { extact }', async () => {
+    const files = await generateTestFiles();
+    await pushToGit(files, repo, { extract: false });
+
+    const nonArchiveLogs = await getCommitLogs();
+    expect(nonArchiveLogs).toMatchSnapshot();
+
+    const archive = await generateTestArchive();
+    await pushToGit(archive, repo, { extract: true });
+
+    const archiveLogs = await getCommitLogs();
+    expect(archiveLogs).toMatchSnapshot();
+
+    expect(archiveLogs).toBe(nonArchiveLogs);
+  });
+
   test('pushToGit(src, repo, { maxFileSize }', async () => {
     const files = await generateTestFiles();
-    await pushToGit(files, repo, {
-      maxFileSize: 99,
-    });
+    await pushToGit(files, repo, { maxFileSize: 99 });
 
     const logs = await getCommitLogs();
     expect(logs).toMatchSnapshot();

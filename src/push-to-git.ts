@@ -1,3 +1,4 @@
+import decompress from 'decompress';
 import execa from 'execa';
 import fs from 'fs-extra';
 import globby from 'globby';
@@ -8,6 +9,7 @@ import simpleGit, { SimpleGit } from 'simple-git';
 type Options = {
   name?: string;
   email?: string;
+  extract?: boolean;
   maxFileSize?: number;
 };
 
@@ -39,6 +41,12 @@ async function configureUser(git: SimpleGit, options?: Options) {
   await git.addConfig('user.email', email);
 }
 
+async function ExtractArchive(src: string) {
+  const extractedDir = await makeTempDir();
+  await decompress(src, extractedDir);
+  return extractedDir;
+}
+
 async function copyAndSplit(src: string, dest: string, chunkSize: number) {
   await fs.copy(src, dest);
 
@@ -53,7 +61,12 @@ async function copyAndSplit(src: string, dest: string, chunkSize: number) {
 }
 
 async function copyFiles(src: string, targetDir: string, options?: Options) {
+  const extract = options?.extract || false;
   const maxFileSize = options?.maxFileSize || /*50GB*/ 50 * 1024 * 1024;
+
+  if (extract) {
+    src = await ExtractArchive(src);
+  }
 
   const oldFiles = await globby(['*', '!.git'], {
     cwd: targetDir,

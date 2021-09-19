@@ -757,6 +757,164 @@ index 0000000..3be870f
 +Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
 `;
 
+exports[`Push To Git pushToGit(src, repo, { extact } 1`] = `
+"commit ****************************************
+Author: somebody <somebody@example.com>
+Date:   *** *** ** **:**:** **** +****
+
+    ****-**-**T**:**:**.***Z
+
+diff --git a/Library/berkshire.es3.tra b/Library/berkshire.es3.tra
+new file mode 100644
+index 0000000..cb71b58
+--- /dev/null
++++ b/Library/berkshire.es3.tra
+@@ -0,0 +1 @@
++Facere quia deleniti dolorem quibusdam id veniam. Et nisi aut corporis laboriosam esse est. Accusamus officiis ut excepturi blanditiis libero ut qui. Fuga enim tempore non voluptas quia vitae ipsam voluptas.
+diff --git a/Network/bypassing_synergies_rss.spf.clkt b/Network/bypassing_synergies_rss.spf.clkt
+new file mode 100644
+index 0000000..d6311ae
+--- /dev/null
++++ b/Network/bypassing_synergies_rss.spf.clkt
+@@ -0,0 +1 @@
++Exercitationem illum molestiae. Similique illo blanditiis et. Rem quod molestias ab esse impedit aliquam quo vel.
+diff --git a/etc/periodic/neural_quetzal_withdrawal.c4u.p7r b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r
+new file mode 100644
+index 0000000..566ccb9
+--- /dev/null
++++ b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r
+@@ -0,0 +1 @@
++Quas optio ea odio sit odio quae voluptas id error. Dicta aut qui qui vel. Suscipit ipsum molestiae inventore placeat nesciunt. Laboriosam facere odio beatae nobis vero quia.
+diff --git a/media/compress_user_centric.inkml.rpm b/media/compress_user_centric.inkml.rpm
+new file mode 100644
+index 0000000..37f1e42
+--- /dev/null
++++ b/media/compress_user_centric.inkml.rpm
+@@ -0,0 +1 @@
++Labore magni rerum. Praesentium distinctio adipisci nulla exercitationem. Illum at natus eum cum ipsam consequatur. Accusamus ipsum quam eum inventore. Deleniti omnis occaecati culpa culpa.
+diff --git a/proc/customer_facilitate_ib.plc.wks b/proc/customer_facilitate_ib.plc.wks
+new file mode 100644
+index 0000000..16dac4a
+--- /dev/null
++++ b/proc/customer_facilitate_ib.plc.wks
+@@ -0,0 +1 @@
++Corporis vel in unde. Iste asperiores consequatur ex quidem omnis inventore deserunt. Eligendi officiis voluptatem.
+diff --git a/rescue/automotive.nc.wml b/rescue/automotive.nc.wml
+new file mode 100644
+index 0000000..aa1996c
+--- /dev/null
++++ b/rescue/automotive.nc.wml
+@@ -0,0 +1 @@
++Ut nostrum ducimus occaecati. Ut exercitationem voluptatibus error quaerat. Error sint aut aliquid qui harum minus officiis. Dolorem animi maiores et.
+diff --git a/sys/system_withdrawal.msf.ez2 b/sys/system_withdrawal.msf.ez2
+new file mode 100644
+index 0000000..2bab7b0
+--- /dev/null
++++ b/sys/system_withdrawal.msf.ez2
+@@ -0,0 +1 @@
++Harum voluptas sunt omnis et accusantium et quia quos sequi. Beatae enim necessitatibus molestiae placeat saepe. Rerum excepturi et laudantium fuga similique fugit corporis. Dolores esse nobis et sint.
+diff --git a/usr/X11R6/global_rupee_sensor.gif.viv b/usr/X11R6/global_rupee_sensor.gif.viv
+new file mode 100644
+index 0000000..c85cde1
+--- /dev/null
++++ b/usr/X11R6/global_rupee_sensor.gif.viv
+@@ -0,0 +1 @@
++Culpa deleniti eos reprehenderit in nisi et qui. Odio et inventore eligendi in. Id harum sit odio quia vitae provident. Provident molestiae harum ullam pariatur quos est quod.
+diff --git a/usr/obj/chief_ergonomic.srx.z1 b/usr/obj/chief_ergonomic.srx.z1
+new file mode 100644
+index 0000000..072f420
+--- /dev/null
++++ b/usr/obj/chief_ergonomic.srx.z1
+@@ -0,0 +1 @@
++Nihil accusamus natus. Quia dolores sed dolores vel quis. Et consequatur voluptas consequatur expedita omnis. Recusandae error culpa nihil quia quis.
+diff --git a/usr/src/mouse.cbr.uvvt b/usr/src/mouse.cbr.uvvt
+new file mode 100644
+index 0000000..3be870f
+--- /dev/null
++++ b/usr/src/mouse.cbr.uvvt
+@@ -0,0 +1 @@
++Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
+`;
+
+exports[`Push To Git pushToGit(src, repo, { extact } 2`] = `
+"commit ****************************************
+Author: somebody <somebody@example.com>
+Date:   *** *** ** **:**:** **** +****
+
+    ****-**-**T**:**:**.***Z
+
+diff --git a/Library/berkshire.es3.tra b/Library/berkshire.es3.tra
+new file mode 100644
+index 0000000..cb71b58
+--- /dev/null
++++ b/Library/berkshire.es3.tra
+@@ -0,0 +1 @@
++Facere quia deleniti dolorem quibusdam id veniam. Et nisi aut corporis laboriosam esse est. Accusamus officiis ut excepturi blanditiis libero ut qui. Fuga enim tempore non voluptas quia vitae ipsam voluptas.
+diff --git a/Network/bypassing_synergies_rss.spf.clkt b/Network/bypassing_synergies_rss.spf.clkt
+new file mode 100644
+index 0000000..d6311ae
+--- /dev/null
++++ b/Network/bypassing_synergies_rss.spf.clkt
+@@ -0,0 +1 @@
++Exercitationem illum molestiae. Similique illo blanditiis et. Rem quod molestias ab esse impedit aliquam quo vel.
+diff --git a/etc/periodic/neural_quetzal_withdrawal.c4u.p7r b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r
+new file mode 100644
+index 0000000..566ccb9
+--- /dev/null
++++ b/etc/periodic/neural_quetzal_withdrawal.c4u.p7r
+@@ -0,0 +1 @@
++Quas optio ea odio sit odio quae voluptas id error. Dicta aut qui qui vel. Suscipit ipsum molestiae inventore placeat nesciunt. Laboriosam facere odio beatae nobis vero quia.
+diff --git a/media/compress_user_centric.inkml.rpm b/media/compress_user_centric.inkml.rpm
+new file mode 100644
+index 0000000..37f1e42
+--- /dev/null
++++ b/media/compress_user_centric.inkml.rpm
+@@ -0,0 +1 @@
++Labore magni rerum. Praesentium distinctio adipisci nulla exercitationem. Illum at natus eum cum ipsam consequatur. Accusamus ipsum quam eum inventore. Deleniti omnis occaecati culpa culpa.
+diff --git a/proc/customer_facilitate_ib.plc.wks b/proc/customer_facilitate_ib.plc.wks
+new file mode 100644
+index 0000000..16dac4a
+--- /dev/null
++++ b/proc/customer_facilitate_ib.plc.wks
+@@ -0,0 +1 @@
++Corporis vel in unde. Iste asperiores consequatur ex quidem omnis inventore deserunt. Eligendi officiis voluptatem.
+diff --git a/rescue/automotive.nc.wml b/rescue/automotive.nc.wml
+new file mode 100644
+index 0000000..aa1996c
+--- /dev/null
++++ b/rescue/automotive.nc.wml
+@@ -0,0 +1 @@
++Ut nostrum ducimus occaecati. Ut exercitationem voluptatibus error quaerat. Error sint aut aliquid qui harum minus officiis. Dolorem animi maiores et.
+diff --git a/sys/system_withdrawal.msf.ez2 b/sys/system_withdrawal.msf.ez2
+new file mode 100644
+index 0000000..2bab7b0
+--- /dev/null
++++ b/sys/system_withdrawal.msf.ez2
+@@ -0,0 +1 @@
++Harum voluptas sunt omnis et accusantium et quia quos sequi. Beatae enim necessitatibus molestiae placeat saepe. Rerum excepturi et laudantium fuga similique fugit corporis. Dolores esse nobis et sint.
+diff --git a/usr/X11R6/global_rupee_sensor.gif.viv b/usr/X11R6/global_rupee_sensor.gif.viv
+new file mode 100644
+index 0000000..c85cde1
+--- /dev/null
++++ b/usr/X11R6/global_rupee_sensor.gif.viv
+@@ -0,0 +1 @@
++Culpa deleniti eos reprehenderit in nisi et qui. Odio et inventore eligendi in. Id harum sit odio quia vitae provident. Provident molestiae harum ullam pariatur quos est quod.
+diff --git a/usr/obj/chief_ergonomic.srx.z1 b/usr/obj/chief_ergonomic.srx.z1
+new file mode 100644
+index 0000000..072f420
+--- /dev/null
++++ b/usr/obj/chief_ergonomic.srx.z1
+@@ -0,0 +1 @@
++Nihil accusamus natus. Quia dolores sed dolores vel quis. Et consequatur voluptas consequatur expedita omnis. Recusandae error culpa nihil quia quis.
+diff --git a/usr/src/mouse.cbr.uvvt b/usr/src/mouse.cbr.uvvt
+new file mode 100644
+index 0000000..3be870f
+--- /dev/null
++++ b/usr/src/mouse.cbr.uvvt
+@@ -0,0 +1 @@
++Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
+`;
+
 exports[`Push To Git pushToGit(src, repo, { maxFileSize } 1`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>

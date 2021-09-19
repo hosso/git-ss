@@ -1,3 +1,4 @@
+import archiver from 'archiver';
 import execa from 'execa';
 import faker from 'faker';
 import fs from 'fs-extra';
@@ -7,6 +8,7 @@ import path from 'path';
 const TEST_BARE_REPO = 'myrepo.git';
 const TEST_REPO = 'myrepo';
 const TEST_FILES = 'mydata';
+const TEST_ARCHIVE = 'mydata.zip';
 
 export async function changeToWorkingDir(): Promise<void> {
   const tempDir = await fs.mkdtemp(path.join(os.tmpdir(), 'git-ss-test-'));
@@ -43,7 +45,6 @@ export async function getCommitLogs(): Promise<string> {
       )
   );
 }
-
 export async function generateTestFiles(seed = 123): Promise<string> {
   faker.seed(seed);
 
@@ -55,4 +56,22 @@ export async function generateTestFiles(seed = 123): Promise<string> {
   }
 
   return TEST_FILES;
+}
+
+export async function generateTestArchive(seed?: number): Promise<string> {
+  const testDataDir = await generateTestFiles(seed);
+
+  const output = fs.createWriteStream(TEST_ARCHIVE);
+  const archive = archiver('zip');
+
+  await new Promise((resolve, reject) => {
+    output.on('close', resolve);
+    output.on('error', reject);
+
+    archive.pipe(output);
+    archive.directory(testDataDir, false);
+    archive.finalize();
+  });
+
+  return TEST_ARCHIVE;
 }
