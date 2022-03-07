@@ -757,7 +757,7 @@ index 0000000..3be870f
 +Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
 `;
 
-exports[`Push To Git pushToGit(src, repo, { extact } 1`] = `
+exports[`Push To Git pushToGit(src, repo, { extact }) 1`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
 Date:   *** *** ** **:**:** **** +****
@@ -836,7 +836,7 @@ index 0000000..3be870f
 +Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
 `;
 
-exports[`Push To Git pushToGit(src, repo, { extact } 2`] = `
+exports[`Push To Git pushToGit(src, repo, { extact }) 2`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
 Date:   *** *** ** **:**:** **** +****
@@ -915,7 +915,7 @@ index 0000000..3be870f
 +Rerum nesciunt et sint est asperiores sit. Mollitia enim iste molestias nesciunt minima. Voluptas optio aut voluptatem."
 `;
 
-exports[`Push To Git pushToGit(src, repo, { maxFileSize } 1`] = `
+exports[`Push To Git pushToGit(src, repo, { maxFileSize }) 1`] = `
 "commit ****************************************
 Author: somebody <somebody@example.com>
 Date:   *** *** ** **:**:** **** +****
@@ -1090,7 +1090,7 @@ index 0000000..76c4893
 +ptio aut voluptatem."
 `;
 
-exports[`Push To Git pushToGit(src, repo, { name, email } 1`] = `
+exports[`Push To Git pushToGit(src, repo, { name, email }) 1`] = `
 "commit ****************************************
 Author: test <test@example.com>
 Date:   *** *** ** **:**:** **** +****

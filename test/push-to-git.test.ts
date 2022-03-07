@@ -23,7 +23,7 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
-  test('pushToGit(src, repo, { name, email }', async () => {
+  test('pushToGit(src, repo, { name, email })', async () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo, {
       name: 'test',
@@ -34,7 +34,7 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
-  test('pushToGit(src, repo, { extact }', async () => {
+  test('pushToGit(src, repo, { extact })', async () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo, { extract: false });
 
@@ -50,7 +50,7 @@ describe('Push To Git', () => {
     expect(archiveLogs).toBe(nonArchiveLogs);
   });
 
-  test('pushToGit(src, repo, { maxFileSize }', async () => {
+  test('pushToGit(src, repo, { maxFileSize })', async () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo, { maxFileSize: 99 });
 
