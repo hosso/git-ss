@@ -1,10 +1,10 @@
-import decompress from 'decompress';
 import execa from 'execa';
 import fs from 'fs-extra';
 import globby from 'globby';
 import os from 'os';
 import path from 'path';
 import simpleGit, { SimpleGit } from 'simple-git';
+import unzip from 'unzip-stream';
 
 type Options = {
   name?: string;
@@ -43,7 +43,11 @@ async function configureUser(git: SimpleGit, options?: Options) {
 
 async function ExtractArchive(src: string) {
   const extractedDir = await makeTempDir();
-  await decompress(src, extractedDir);
+  const stream = fs.createReadStream(src);
+  stream.pipe(unzip.Extract({ path: extractedDir }));
+  await new Promise((resolve, reject) =>
+    stream.on('close', resolve).on('error', reject),
+  );
   return extractedDir;
 }
 
@@ -62,7 +66,7 @@ async function copyAndSplit(src: string, dest: string, chunkSize: number) {
 
 async function copyFiles(src: string, targetDir: string, options?: Options) {
   const extract = options?.extract || false;
-  const maxFileSize = options?.maxFileSize || /*50GB*/ 50 * 1024 * 1024;
+  const maxFileSize = options?.maxFileSize || /*50MB*/ 50 * 1024 * 1024;
 
   if (extract) {
     src = await ExtractArchive(src);

@@ -1,6 +1,5 @@
 import { pushToGit } from '../src';
 import {
-  changeToWorkingDir,
   createLocalRepo,
   generateTestArchive,
   generateTestFiles,
@@ -11,7 +10,6 @@ describe('Push To Git', () => {
   let repo: string;
 
   beforeEach(async () => {
-    await changeToWorkingDir();
     repo = await createLocalRepo();
   });
 
@@ -19,7 +17,7 @@ describe('Push To Git', () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo);
 
-    const logs = await getCommitLogs();
+    const logs = await getCommitLogs(repo);
     expect(logs).toMatchSnapshot();
   });
 
@@ -30,7 +28,7 @@ describe('Push To Git', () => {
       email: 'test@example.com',
     });
 
-    const logs = await getCommitLogs();
+    const logs = await getCommitLogs(repo);
     expect(logs).toMatchSnapshot();
   });
 
@@ -38,13 +36,13 @@ describe('Push To Git', () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo, { extract: false });
 
-    const nonArchiveLogs = await getCommitLogs();
+    const nonArchiveLogs = await getCommitLogs(repo);
     expect(nonArchiveLogs).toMatchSnapshot();
 
     const archive = await generateTestArchive();
     await pushToGit(archive, repo, { extract: true });
 
-    const archiveLogs = await getCommitLogs();
+    const archiveLogs = await getCommitLogs(repo);
     expect(archiveLogs).toMatchSnapshot();
 
     expect(archiveLogs).toBe(nonArchiveLogs);
@@ -54,7 +52,7 @@ describe('Push To Git', () => {
     const files = await generateTestFiles();
     await pushToGit(files, repo, { maxFileSize: 99 });
 
-    const logs = await getCommitLogs();
+    const logs = await getCommitLogs(repo);
     expect(logs).toMatchSnapshot();
   });
 
@@ -63,7 +61,7 @@ describe('Push To Git', () => {
       const files = await generateTestFiles(i);
       await pushToGit(files, repo);
 
-      const logs = await getCommitLogs();
+      const logs = await getCommitLogs(repo);
       expect(logs).toMatchSnapshot();
     }
   });

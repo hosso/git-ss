@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Push To Git (Large Archive) pushToGit(src, repo, { extact: true }) 1`] = `
+"commit ****************************************
+Author: somebody <somebody@example.com>
+Date:   *** *** ** **:**:** **** +****
+
+    ****-**-**T**:**:**.***Z
+
+diff --git a/file[0].bin.partaa b/file[0].bin.partaa
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partaa differ
+diff --git a/file[0].bin.partab b/file[0].bin.partab
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partab differ
+diff --git a/file[0].bin.partac b/file[0].bin.partac
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partac differ
+diff --git a/file[0].bin.partad b/file[0].bin.partad
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partad differ
+diff --git a/file[0].bin.partae b/file[0].bin.partae
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partae differ
+diff --git a/file[0].bin.partaf b/file[0].bin.partaf
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partaf differ
+diff --git a/file[0].bin.partag b/file[0].bin.partag
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partag differ
+diff --git a/file[0].bin.partah b/file[0].bin.partah
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partah differ
+diff --git a/file[0].bin.partai b/file[0].bin.partai
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partai differ
+diff --git a/file[0].bin.partaj b/file[0].bin.partaj
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partaj differ
+diff --git a/file[0].bin.partak b/file[0].bin.partak
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partak differ
+diff --git a/file[0].bin.partal b/file[0].bin.partal
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partal differ
+diff --git a/file[0].bin.partam b/file[0].bin.partam
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partam differ
+diff --git a/file[0].bin.partan b/file[0].bin.partan
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partan differ
+diff --git a/file[0].bin.partao b/file[0].bin.partao
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partao differ
+diff --git a/file[0].bin.partap b/file[0].bin.partap
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partap differ
+diff --git a/file[0].bin.partaq b/file[0].bin.partaq
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partaq differ
+diff --git a/file[0].bin.partar b/file[0].bin.partar
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partar differ
+diff --git a/file[0].bin.partas b/file[0].bin.partas
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partas differ
+diff --git a/file[0].bin.partat b/file[0].bin.partat
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[0].bin.partat differ
+diff --git a/file[0].bin.partau b/file[0].bin.partau
+new file mode 100644
+index 0000000..ce3a6f2
+Binary files /dev/null and b/file[0].bin.partau differ
+diff --git a/file[1].bin.partaa b/file[1].bin.partaa
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partaa differ
+diff --git a/file[1].bin.partab b/file[1].bin.partab
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partab differ
+diff --git a/file[1].bin.partac b/file[1].bin.partac
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partac differ
+diff --git a/file[1].bin.partad b/file[1].bin.partad
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partad differ
+diff --git a/file[1].bin.partae b/file[1].bin.partae
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partae differ
+diff --git a/file[1].bin.partaf b/file[1].bin.partaf
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partaf differ
+diff --git a/file[1].bin.partag b/file[1].bin.partag
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partag differ
+diff --git a/file[1].bin.partah b/file[1].bin.partah
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partah differ
+diff --git a/file[1].bin.partai b/file[1].bin.partai
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partai differ
+diff --git a/file[1].bin.partaj b/file[1].bin.partaj
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partaj differ
+diff --git a/file[1].bin.partak b/file[1].bin.partak
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partak differ
+diff --git a/file[1].bin.partal b/file[1].bin.partal
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partal differ
+diff --git a/file[1].bin.partam b/file[1].bin.partam
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partam differ
+diff --git a/file[1].bin.partan b/file[1].bin.partan
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partan differ
+diff --git a/file[1].bin.partao b/file[1].bin.partao
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partao differ
+diff --git a/file[1].bin.partap b/file[1].bin.partap
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partap differ
+diff --git a/file[1].bin.partaq b/file[1].bin.partaq
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partaq differ
+diff --git a/file[1].bin.partar b/file[1].bin.partar
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partar differ
+diff --git a/file[1].bin.partas b/file[1].bin.partas
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partas differ
+diff --git a/file[1].bin.partat b/file[1].bin.partat
+new file mode 100644
+index 0000000..1a20dba
+Binary files /dev/null and b/file[1].bin.partat differ
+diff --git a/file[1].bin.partau b/file[1].bin.partau
+new file mode 100644
+index 0000000..ce3a6f2
+Binary files /dev/null and b/file[1].bin.partau differ"
+`;
