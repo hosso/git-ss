@@ -2,6 +2,8 @@ import execa from 'execa';
 import fs from 'fs-extra';
 import globby from 'globby';
 import isArchive from 'is-archive';
+import isAudio from 'is-audio';
+import isBinary from 'is-binary-path';
 import isImage from 'is-image';
 import isVideo from 'is-video';
 import os from 'os';
@@ -15,9 +17,11 @@ type Options = {
   extract?: boolean;
   maxFileSize?: number;
   exclusion?: {
-    archive?: boolean;
     video?: boolean;
+    audio?: boolean;
     image?: boolean;
+    archive?: boolean;
+    binary?: boolean;
   };
 };
 
@@ -27,9 +31,11 @@ const defaultOptions: Required<Options> = {
   extract: false,
   maxFileSize: /*50MB*/ 50 * 1024 * 1024,
   exclusion: {
-    archive: false,
     video: false,
+    audio: false,
     image: false,
+    archive: false,
+    binary: false,
   },
 };
 
@@ -104,9 +110,11 @@ async function copyFiles(
   const newFiles = await globby(['**/*'], { cwd: src });
   await Promise.all(
     newFiles.map(async (file) => {
-      if (opts.exclusion.archive && isArchive(file)) return;
       if (opts.exclusion.video && isVideo(file)) return;
+      if (opts.exclusion.audio && isAudio(file)) return;
       if (opts.exclusion.image && isImage(file)) return;
+      if (opts.exclusion.archive && isArchive(file)) return;
+      if (opts.exclusion.binary && isBinary(file)) return;
 
       const srcPath = path.join(src, file);
       const destPath = path.join(targetDir, file);

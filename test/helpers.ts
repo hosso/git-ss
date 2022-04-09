@@ -66,13 +66,12 @@ export async function generateTestFiles(seed = 123): Promise<string> {
     await fs.appendFile(filePath, faker.lorem.paragraph() + '\n');
   }
 
-  for (const ext of ['zip', 'mp4', 'jpg']) {
+  for (const ext of ['mp4', 'mp3', 'jpg', 'zip']) {
     const filePath = path.join(
       dataDir,
       faker.system.directoryPath(),
       faker.system.fileName().replace(/[^.]+$/, ext),
     );
-    console.log(filePath);
     await fs.ensureFile(filePath);
     await fs.appendFile(filePath, faker.lorem.paragraph() + '\n');
   }

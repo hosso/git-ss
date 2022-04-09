@@ -56,7 +56,7 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
-  test.each(['archive', 'video', 'image'])(
+  test.each(['video', 'audio', 'image', 'archive', 'binary'])(
     'pushToGit(src, repo, { exclusion: %s })',
     async (type) => {
       const files = await generateTestFiles();

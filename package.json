@@ -52,6 +52,8 @@
     "fs-extra": "^10.0.0",
     "globby": "11",
     "is-archive": "^2.0.0",
+    "is-audio": "^0.0.0",
+    "is-binary-path": "^2.1.0",
     "is-image": "^3.0.0",
     "is-video": "^1.0.1",
     "simple-git": "^2.45.0",
