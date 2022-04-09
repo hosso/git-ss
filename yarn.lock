@@ -914,6 +914,11 @@ anymatch@^3.0.3:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
 
+archive-extensions@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/archive-extensions/-/archive-extensions-2.0.0.tgz#b9a2c39ae3ee02271fd694b8173f8d505a947db4"
+  integrity sha512-D715US4YOeUVUaWn8U/kMlv9w+EKpdjfq+f1D2KffcUQhtXaGTL2PSiYzeiI/rX38iOGyAqVxujuau0yAtSoFg==
+
 archiver-utils@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/archiver-utils/-/archiver-utils-2.1.0.tgz#e8a460e94b693c3e3da182a098ca6285ba9249e2"
@@ -2111,6 +2116,11 @@ ignore@^5.1.1, ignore@^5.1.4:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
+image-extensions@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/image-extensions/-/image-extensions-1.1.0.tgz#b8e6bf6039df0056e333502a00b6637a3105d894"
+  integrity sha1-uOa/YDnfAFbjM1AqALZjejEF2JQ=
+
 import-fresh@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/import-fresh/-/import-fresh-2.0.0.tgz#d81355c15612d386c61f9ddd3922d4304822a546"
@@ -2166,6 +2176,13 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+is-archive@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-archive/-/is-archive-2.0.0.tgz#7cd75eb4a4b74dcfce2e17017e8cb2ff2ff0946f"
+  integrity sha512-Y07Fx8jmPUoxwKA84VtMSnBkTlDG0OQ2WrNsDP8xjVDQfFnV6iK9bfcr3bKmnzV8eWHH4KitL2R7oM832zSKKQ==
+  dependencies:
+    archive-extensions "^2.0.0"
 
 is-arrayish@^0.2.1:
   version "0.2.1"
@@ -2239,6 +2256,13 @@ is-glob@^4.0.0, is-glob@^4.0.1:
   integrity sha512-5G0tKtBTFImOqDnLB2hG6Bp2qcKEFduo4tZu9MT/H6NQv/ghhy30o55ufafxJ/LdH79LLs2Kfrn85TLKyA7BUg==
   dependencies:
     is-extglob "^2.1.1"
+
+is-image@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/is-image/-/is-image-3.0.0.tgz#f183431372f6f8caf7cda316a0a6dea4d41926dd"
+  integrity sha512-NNPLvwKZ/hqx1Wv+ayKvVeDOylIapVKSxK/guzmB9doAk0FEdK0KqFKbnwNbuMLEPqEY4NaBhxzB4e98fVOq2Q==
+  dependencies:
+    image-extensions "^1.1.0"
 
 is-negative-zero@^2.0.1:
   version "2.0.1"
@@ -2318,6 +2342,13 @@ is-unicode-supported@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz#3f26c76a809593b52bfa2ecb5710ed2779b522a7"
   integrity sha512-knxG2q4UC3u8stRGyAVJCOdxFmv5DZiRcdlIaAQXAbSfJya+OhopNotLQrstBhququ4ZpuKbDc/8S6mgXgPFPw==
+
+is-video@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-video/-/is-video-1.0.1.tgz#7bc67760b0103d402bc1f10bb542f16a3687773b"
+  integrity sha1-e8Z3YLAQPUArwfELtULxajaHdzs=
+  dependencies:
+    video-extensions "^1.0.0"
 
 isarray@~1.0.0:
   version "1.0.0"
@@ -4167,6 +4198,11 @@ validate-npm-package-license@^3.0.1:
   dependencies:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
+
+video-extensions@^1.0.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/video-extensions/-/video-extensions-1.2.0.tgz#62f449f403b853f02da40964cbf34143f7d96731"
+  integrity sha512-TriMl18BHEsh2KuuSA065tbu4SNAC9fge7k8uKoTTofTq89+Xsg4K1BGbmSVETwUZhqSjd9KwRCNwXAW/buXMg==
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"

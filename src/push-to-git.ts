@@ -1,16 +1,36 @@
 import execa from 'execa';
 import fs from 'fs-extra';
 import globby from 'globby';
+import isArchive from 'is-archive';
+import isImage from 'is-image';
+import isVideo from 'is-video';
 import os from 'os';
 import path from 'path';
 import simpleGit, { SimpleGit } from 'simple-git';
 import unzip from 'unzip-stream';
 
 type Options = {
-  name?: string;
-  email?: string;
+  name?: string | null;
+  email?: string | null;
   extract?: boolean;
   maxFileSize?: number;
+  exclusion?: {
+    archive?: boolean;
+    video?: boolean;
+    image?: boolean;
+  };
+};
+
+const defaultOptions: Required<Options> = {
+  name: null,
+  email: null,
+  extract: false,
+  maxFileSize: /*50MB*/ 50 * 1024 * 1024,
+  exclusion: {
+    archive: false,
+    video: false,
+    image: false,
+  },
 };
 
 async function makeTempDir() {
@@ -27,8 +47,8 @@ async function clone(repoDir: string, repo: string) {
   return git;
 }
 
-async function configureUser(git: SimpleGit, options?: Options) {
-  let [name, email] = [options?.name, options?.email];
+async function configureUser(git: SimpleGit, opts: Required<Options>) {
+  let [name, email] = [opts.name, opts.email];
 
   if (!name || !email) {
     const configs = (await git.listConfig()).all;
@@ -64,11 +84,12 @@ async function copyAndSplit(src: string, dest: string, chunkSize: number) {
   await fs.remove(dest);
 }
 
-async function copyFiles(src: string, targetDir: string, options?: Options) {
-  const extract = options?.extract || false;
-  const maxFileSize = options?.maxFileSize || /*50MB*/ 50 * 1024 * 1024;
-
-  if (extract) {
+async function copyFiles(
+  src: string,
+  targetDir: string,
+  opts: Required<Options>,
+) {
+  if (opts.extract) {
     src = await ExtractArchive(src);
   }
 
@@ -83,12 +104,16 @@ async function copyFiles(src: string, targetDir: string, options?: Options) {
   const newFiles = await globby(['**/*'], { cwd: src });
   await Promise.all(
     newFiles.map(async (file) => {
+      if (opts.exclusion.archive && isArchive(file)) return;
+      if (opts.exclusion.video && isVideo(file)) return;
+      if (opts.exclusion.image && isImage(file)) return;
+
       const srcPath = path.join(src, file);
       const destPath = path.join(targetDir, file);
 
       const stat = await fs.stat(srcPath);
-      if (stat.size > maxFileSize) {
-        await copyAndSplit(srcPath, destPath, maxFileSize);
+      if (stat.size > opts.maxFileSize) {
+        await copyAndSplit(srcPath, destPath, opts.maxFileSize);
       } else {
         await fs.copy(srcPath, destPath);
       }
@@ -107,12 +132,13 @@ export async function pushToGit(
   repo: string,
   options?: Options,
 ): Promise<void> {
+  const opts: Required<Options> = { ...defaultOptions, ...options };
   const repoDir = await makeTempDir();
 
   const git = await clone(repoDir, repo);
-  await configureUser(git, options);
+  await configureUser(git, opts);
 
-  await copyFiles(src, repoDir, options);
+  await copyFiles(src, repoDir, opts);
 
   await commitAndPush(git);
 }

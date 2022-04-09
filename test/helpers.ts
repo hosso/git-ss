@@ -54,6 +54,7 @@ export async function getCommitLogs(repo: string): Promise<string> {
       )
   );
 }
+
 export async function generateTestFiles(seed = 123): Promise<string> {
   const dataDir = uuid();
 
@@ -61,6 +62,17 @@ export async function generateTestFiles(seed = 123): Promise<string> {
 
   for (let index = 0; index < 10; index++) {
     const filePath = path.join(dataDir, faker.system.filePath());
+    await fs.ensureFile(filePath);
+    await fs.appendFile(filePath, faker.lorem.paragraph() + '\n');
+  }
+
+  for (const ext of ['zip', 'mp4', 'jpg']) {
+    const filePath = path.join(
+      dataDir,
+      faker.system.directoryPath(),
+      faker.system.fileName().replace(/[^.]+$/, ext),
+    );
+    console.log(filePath);
     await fs.ensureFile(filePath);
     await fs.appendFile(filePath, faker.lorem.paragraph() + '\n');
   }

@@ -56,6 +56,17 @@ describe('Push To Git', () => {
     expect(logs).toMatchSnapshot();
   });
 
+  test.each(['archive', 'video', 'image'])(
+    'pushToGit(src, repo, { exclusion: %s })',
+    async (type) => {
+      const files = await generateTestFiles();
+      await pushToGit(files, repo, { exclusion: { [type]: true } });
+
+      const logs = await getCommitLogs(repo);
+      expect(logs).toMatchSnapshot();
+    },
+  );
+
   test('Repeat pushToGit(src, repo)', async () => {
     for (let i = 0; i < 3; i++) {
       const files = await generateTestFiles(i);
