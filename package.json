@@ -1,6 +1,6 @@
 {
   "name": "git-ss",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Save a snapshot of a directory to git",
   "keywords": [
     "git",
